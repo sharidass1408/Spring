@@ -30,7 +30,7 @@ public class LoggingAspect {
 	 * without within writing the same expression
 	 */
 	
-	/*@Pointcut("execution(public * com.nbna.model.Triangle.*(..))")
+	/*@Pointcut("execution(* * com.nbna.model.Triangle.*(..))")
 	public void allTrianglMethods(){		
 	}*/
 	

@@ -1,27 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<!-- Bean header Tag. -->
 	<beans xmlns="http://www.springframework.org/schema/beans"
 		   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     	   xmlns:aop="http://www.springframework.org/schema/aop"    		         
             xsi:schemaLocation="
                 http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd               
 		        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd">
-   
-	<!-- The below tag tells the spring container that we are using AOP -->
+     
     <aop:aspectj-autoproxy /> 
-   
-    <!-- The below bean instantiates the Aspect class and keeps it available for
-    	 spring to use it whenever required -->
     <bean name="loggingAspcet" class="com.nbna.aspect.LoggingAspect"></bean>
-        
-   <!--  <bean name="triangle" class="com.nbna.model.Triangle">
+    
+    <bean name="triangle" class="com.nbna.model.Triangle">
           <property name="name" value="Triangle name"/>          
       </bean>
       
       <bean name="circle" class="com.nbna.model.Circle">
-          <property name="name" value="Circle name"/>          
-      </bean> -->
+        <property name="name" value="Circle name"/>          
+      </bean>
       
       <bean name="shapeService" class="com.nbna.service.ShapeService" autowire="byName"/>
       

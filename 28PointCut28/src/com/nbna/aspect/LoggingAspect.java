@@ -20,6 +20,9 @@ public class LoggingAspect {
 		System.out.println("Second Advice run. Get Method called");
 	}
 	
+	/*
+	 * Point cut is that location in the code where an advise needs to be applied.
+	 */
 	@Pointcut("execution(public * getCircle(..))")
 	public void allGetters(){		
 	}

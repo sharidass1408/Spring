@@ -3,7 +3,8 @@
 
 <beans>
         
-    <bean id="circle" class="com.nbna.diexample.Circle">             
+    <bean id="circle" class="com.nbna.diexample.Circle"> 
+        
      </bean>
      
     <bean id="center" class="com.nbna.diexample.Point">

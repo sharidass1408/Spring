@@ -19,7 +19,7 @@ public class Circle implements Shape {
 	public void drawShape() {
 		System.out.println(" Circle is drawn");
 		System.out.println("The following are the co-ordinates:");
-		System.out.println("Center = (" + getCenter().getX()+","+ getCenter().getY() +")");
+		System.out.println("Center = (" + center.getX()+","+ center.getY() +")");
 	
 		
 	}

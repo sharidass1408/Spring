@@ -10,9 +10,9 @@ import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
 @Component 
-//@Controller
-//@Service
-//@Repository
+//@Controller // for controller
+//@Service	 // for service class
+//@Repository //for Data object
 
 public class Circle implements Shape {
 	
@@ -27,12 +27,12 @@ public class Circle implements Shape {
 		this.center = center;
 	}
 	
-	@PostConstruct
+	@PostConstruct // Executes this method when bean is about to be initialized
 	public void initCircle(){
 		System.out.println("Init method is called");
 	}
 	
-	@PreDestroy
+	@PreDestroy //Executes before bean is about to be destroyed.
 	public void destroyCircle(){
 		System.out.println("Destroy method is called");
 	}
